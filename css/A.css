@@ -1,0 +1,287 @@
+#A-carousel {
+    font-family: "Cabinet Grotesk";
+    font-size: 4vw;
+    letter-spacing: -0.25vw;
+    color: #fff;
+    width: 100%;
+    height: 5vw;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+    display: flex;
+    justify-content: center;
+}
+
+.A-carousel {
+    position: absolute;
+    top: 5vw;
+    animation: A-carousel 2.2s forwards cubic-bezier(0.86, 0, 0.07, 1) 0.5s;
+}
+
+#A-carousel > #i {
+    font-weight: 900;
+    letter-spacing: 0;
+}
+
+#A-carousel > #ii {
+    animation-delay: 1.6s;
+}
+
+#A-carousel > #iii {
+    animation-delay: 2.7s;
+}
+
+@keyframes A-carousel {
+    50% {
+        top: 0vw;
+    }
+    100% {
+        top: -5vw;
+    }
+}
+
+#A {
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#A-subtext {
+    font-family: "Gambetta";
+    font-weight: 500;
+    font-size: 2vw;
+
+    height: 2.5vw;
+    overflow: hidden;
+
+    position: absolute;
+    top: 12vw;
+    left: 10vw;
+}
+
+#A-subtext div {
+    color: rgba(255, 255, 255, 0.5);
+
+    position: relative;
+    top: 2.5vw;
+
+    animation: A-subtext 1.5s forwards cubic-bezier(0.86, 0, 0.07, 1) 5.5s;
+}
+
+#A-subtext div b {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+@keyframes A-subtext {
+    100% {
+        top: 0;
+    }
+}
+
+#A-text {
+    position: absolute;
+    top: 16vw;
+    left: 10vw;
+
+    font-weight: 500;
+    font-size: 8.5vw;
+
+    letter-spacing: -0.4vw;
+}
+
+.A-text {
+    overflow: hidden;
+}
+
+.A-text div {
+    height: 9.5vw;
+
+    position: relative;
+    top: 9.5vw;
+
+    animation: A-text 1.5s forwards cubic-bezier(0.86, 0, 0.07, 1) 5.4s;
+}
+
+#ii.A-text div {
+    animation-delay: 5.5s;
+}
+
+#iii.A-text div {
+    animation-delay: 5.6s;
+}
+
+@keyframes A-text {
+    100% {
+        top: 0;
+    }
+}
+
+#A-star {
+    position: absolute;
+    left: 56vw;
+    top: 16vw;
+
+    color: var(--green);
+}
+
+#A-star div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 0;
+
+    animation: A-star 3s forwards cubic-bezier(0.86, 0, 0.07, 1) 5.5s;
+}
+
+@keyframes A-star {
+    100% {
+        font-size: 10vw;
+        transform: translate(-50%, -50%) rotate(1.22turn);
+    }
+}
+
+#A-quote-ctn {
+    font-family: "Gambetta";
+    font-size: 1.5vw;
+
+    position: absolute;
+    top: 65vw;
+    left: 15vw;
+    width: 25vw;
+
+    opacity: 0.85;
+}
+
+#A-quote-ctn div {
+    overflow: hidden;
+}
+
+#A-quote-ctn div div {
+    position: relative;
+    top: 2vw;
+}
+
+#A-quote-ctn div > #ii {
+    animation-delay: 0.1s;
+}
+
+#A-quote-ctn div > #iii {
+    animation-delay: 0.2s;
+}
+
+#A-quote-ctn div > #iv {
+    animation-delay: 0.3s;
+}
+
+#A-quote-ctn div > #v {
+    animation-delay: 0.4s;
+}
+
+.A-quote-final {
+    animation: A-quote-final 1s forwards;
+}
+
+@keyframes A-quote-final {
+    100% {
+        top: 0;
+    }
+}
+
+#A-quote-ctn > #line {
+    position: relative;
+    top: 1vw;
+
+    height: 0.01vw;
+    width: 10vw;
+    background: #eee;
+
+    opacity: 0.25;
+}
+
+#A-video-ctn {
+    position: absolute;
+    top: 37vw;
+    left: 50vw;
+}
+
+#A-video {
+    position: absolute;
+    left: -50vw;
+    top: -37vw;
+
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+
+    border-radius: 0;
+
+    z-index: 5;
+
+    animation: A-video 4s forwards cubic-bezier(0.86, 0, 0.07, 1) 4.4s;
+}
+
+@keyframes A-video {
+    20% {
+        left: -47.5vw;
+        top: calc(5vh - 37vw);
+        width: 95vw;
+        height: 90vh;
+        border-radius: 1vw;
+    }
+    50% {
+        left: 0vw;
+        top: 0vw;
+        width: 40vw;
+        height: 50vw;
+        border-radius: 1vw;
+    }
+    100% {
+        left: 0vw;
+        top: 0vw;
+        width: 40vw;
+        height: 50vw;
+        border-radius: 1vw;
+        z-index: 0;
+    }
+}
+
+#A-video-info {
+    position: relative;
+    top: 53vw;
+
+    font-size: 1.9vw;
+
+    width: 28vw;
+    white-space: wrap;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.2vw;
+
+    position: relative;
+    top: 2vw;
+
+    width: 11vw;
+    height: 3vw;
+
+    border: 0.01vw solid rgba(255, 255, 255, 0.5);
+    border-radius: 2vw;
+
+    transition: 0.25s background;
+
+    z-index: 2;
+}
+
+.button:hover {
+    background: #222;
+}

@@ -1,0 +1,123 @@
+.D-info {
+    border-radius: 1vw;
+}
+
+#D-title {
+    font-family: "Gambetta";
+    font-size: 8vw;
+
+    position: absolute;
+    top: 242vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#D-i {
+    position: absolute;
+    top: 255vw;
+    left: 5vw;
+}
+
+#D-pexels {
+    position: absolute;
+    left: 3vw;
+}
+
+#D-pexels-info {
+    font-size: 3.25vw;
+
+    position: absolute;
+    top: 6vw;
+    left: 25vw;
+}
+
+#D-ii {
+    position: absolute;
+    top: 25vw;
+    left: 73vw;
+}
+
+#D-bankrate-info > .number,
+#D-bankrate-info > .name {
+    position: absolute;
+    right: 0;
+}
+
+#D-bankrate {
+    position: absolute;
+}
+
+#D-bankrate-info {
+    font-size: 3.25vw;
+
+    position: absolute;
+    top: 6vw;
+    left: -30vw;
+
+    text-align: right;
+}
+
+#push {
+    position: relative;
+    top: 5vw;
+}
+
+#push > .button {
+    position: absolute;
+    right: 0;
+    top: 13vw;
+}
+
+#D-iii {
+    position: absolute;
+    top: 50vw;
+}
+
+#D-understandsolar {
+    position: absolute;
+    left: 3vw;
+}
+
+.name {
+    white-space: nowrap;
+}
+
+#D-understandsolar-info {
+    font-size: 3.25vw;
+
+    position: absolute;
+    top: 6vw;
+    left: 25vw;
+}
+
+#D-iv {
+    position: absolute;
+    top: 70vw;
+    left: 73vw;
+}
+
+#D-forbes-info > .number,
+#D-forbes-info > .name {
+    position: absolute;
+    right: 0;
+}
+
+#D-forbes {
+    position: absolute;
+}
+
+#D-forbes-info {
+    font-size: 3.25vw;
+
+    position: absolute;
+    top: 6vw;
+    left: -30vw;
+
+    text-align: right;
+}
+
+#push > .button-f {
+    position: absolute;
+    right: 0;
+    top: 9vw !important;
+}

@@ -1,0 +1,64 @@
+#C-title {
+    font-family: "Gambetta";
+    font-size: 8vw;
+
+    position: absolute;
+    top: 202vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#C-questions {
+    font-size: 2vw;
+
+    position: absolute;
+    top: 216vw;
+    left: 10vw;
+}
+
+.question {
+    font-weight: 700;
+
+    width: 80vw;
+
+    padding-top: 1.5vw;
+    padding-bottom: 1vw;
+
+    border-top: 0.01vw solid #eee;
+}
+
+.last.question {
+    border-bottom: 0.01vw solid #eee;
+}
+
+.arrow {
+    font-size: 1.5vw;
+
+    padding-top: 0.5vw;
+
+    position: absolute;
+    right: 0.5vw;
+
+    transition: 0.25s transform;
+}
+
+.arrow.flip {
+    transform: rotate(180deg);
+}
+
+.answer {
+    font-weight: 400;
+
+    padding-top: 0;
+    font-size: 1.25vw;
+
+    height: 0;
+    overflow: hidden;
+
+    transition: 0.25s height, 0.25s padding-top;
+}
+
+.answer.revealed {
+    padding-top: 1vw;
+    height: 2vw;
+}

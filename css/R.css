@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "Cabinet Grotesk";
+    src: url(../src/fonts/CabinetGrotesk-Variable.ttf);
+}
+
+@font-face {
+    font-family: "Gambetta";
+    src: url(../src/fonts/Gambetta-VariableItalic.ttf);
+}
+
+:root {
+    --green: #46f672;
+}
+
+html,
+body {
+    color: #eee;
+    background: #030303;
+
+    font-family: "Cabinet Grotesk";
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+    cursor: none;
+
+    scroll-behavior: smooth;
+}
+
+a,
+a:hover {
+    cursor: none;
+
+    color: #eee;
+    text-decoration: none;
+}
+
+.desc a {
+    color: red;
+    text-decoration: none;
+}
+
+.relative {
+    position: relative;
+}
+
+.hide {
+    position: relative;
+    opacity: 0 !important;
+}
+
+.hide2 {
+    top: -200vw !important;
+}
+
+#blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    backdrop-filter: blur(0vw);
+    z-index: 3;
+
+    transition: 0.25s backdrop-filter, 0.25s background;
+}
+
+#blur.active {
+    background: #030303;
+    backdrop-filter: blur(0.5vw);
+}
+
+#cursor {
+    opacity: 0;
+    width: 1vw;
+    height: 1vw;
+    transform: translate(-0.5vw, -0.5vw);
+
+    border-radius: 1vw;
+    background: #fff;
+
+    mix-blend-mode: difference;
+    position: absolute;
+    pointer-events: none;
+
+    transition: width 0.25s, height 0.25s, left 0.05s, top 0.05s;
+    z-index: 4;
+}
+
+body:has(
+        #imgs:hover,
+        a:hover,
+        .button:hover,
+        .B-info:hover,
+        #A-video:hover,
+        .question:hover
+    )
+    #cursor {
+    width: 2vw;
+    height: 2vw;
+}
+
+#rotate {
+    text-align: center;
+    font-weight: 500;
+    font-size: 10vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 7;
+
+    pointer-events: none;
+}

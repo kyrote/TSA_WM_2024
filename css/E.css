@@ -1,0 +1,58 @@
+@font-face {
+    font-family: Inter;
+    src: url("../src/fonts/Inter.ttf");
+}
+
+#E {
+    position: absolute;
+    top: 358vw;
+    left: 0;
+
+    font-family: Inter;
+    color: #030303;
+    background: #eee;
+    width: 100%;
+    height: 17.5vw;
+}
+
+#names {
+    font-weight: 800;
+    font-size: 11.5vw;
+
+    position: absolute;
+    bottom: -1vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#work {
+    position: relative;
+    top: 2vw;
+    left: 3.5vw;
+
+    width: 10vw;
+
+    font-weight: 500;
+    font-size: 1.25vw;
+}
+
+#work a {
+    text-decoration: underline 0.2vw;
+    text-underline-offset: 0.4vw;
+
+    transition: 0.25s color;
+    color: #030303;
+}
+
+#work a:hover {
+    color: red;
+}
+
+#phone {
+    position: relative;
+    top: -1.75vw;
+    left: 66.4vw;
+    font-weight: 800;
+    font-size: 4vw;
+    width: 33vw;
+}

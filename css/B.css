@@ -1,0 +1,233 @@
+.B-info,
+.D-info {
+    cursor: pointer;
+    transition: 0.25s opacity;
+
+    height: 21vw;
+    width: 16.5vw;
+    object-fit: cover;
+}
+
+.B-info:hover {
+    opacity: 0.75;
+}
+
+#B-solar-panel {
+    position: absolute;
+    top: 90vw;
+    left: 14vw;
+
+    border-radius: 1vw;
+}
+
+#B-solar-panel-info {
+    font-size: 3.25vw;
+
+    position: absolute;
+    top: 120vw;
+    left: 38vw;
+}
+
+.number {
+    font-size: 1.25vw;
+
+    position: relative;
+    top: -3.5vw;
+}
+
+.line {
+    margin-top: 1vw;
+
+    height: 0.01vw;
+    width: 25vw;
+
+    background: #eee;
+    opacity: 0.5;
+}
+
+.desc {
+    margin-top: 2vw;
+
+    font-size: 1.2vw;
+    width: 25vw;
+
+    line-height: 1.75vw;
+}
+
+#B-wind {
+    position: absolute;
+    top: 110vw;
+    left: 70vw;
+
+    border-radius: 1vw;
+}
+
+#B-wind-info {
+    font-size: 3.5vw;
+
+    position: absolute;
+    top: 145vw;
+    left: 8vw;
+}
+
+#B-geothermal {
+    position: absolute;
+    top: 142vw;
+    left: 38vw;
+
+    border-radius: 1vw;
+}
+
+#B-geothermal-info {
+    font-size: 3.5vw;
+
+    position: absolute;
+    top: 176vw;
+    left: 62vw;
+}
+
+.B-big-name {
+    font-size: 10vw;
+    font-weight: 800;
+
+    position: absolute;
+    top: 16vw;
+    left: 50%;
+    transform: translateX(-50%);
+
+    white-space: nowrap;
+    text-align: center;
+}
+
+.B-big-name > #sub {
+    position: relative;
+    bottom: 10vw;
+
+    font-size: 2vw;
+    font-weight: 100;
+
+    opacity: 0;
+    transition: 1s opacity;
+}
+
+.B-big-name > #scroll {
+    position: relative;
+    top: -3.5vw;
+
+    font-size: 1vw;
+    font-weight: 400;
+    opacity: 0;
+}
+
+#B-solar-panel-big {
+    height: 9.5vw;
+
+    display: inline-block;
+    overflow: hidden;
+}
+
+#B-solar-panel-big div {
+    display: inline;
+
+    position: relative;
+    top: 8vw;
+
+    transition: 0.5s top;
+}
+
+#B-solar-panel-big div.revealed {
+    top: 0;
+}
+
+#B-wind-big {
+    height: 9.5vw;
+
+    display: inline-block;
+    overflow: hidden;
+}
+
+#B-wind-big div {
+    display: inline;
+
+    position: relative;
+    top: 8vw;
+
+    transition: 0.5s top;
+}
+
+#B-wind-big div.revealed {
+    top: 0;
+}
+
+#B-geothermal-big {
+    height: 9.5vw;
+
+    display: inline-block;
+    overflow: hidden;
+}
+
+#B-geothermal-big div {
+    display: inline;
+
+    position: relative;
+    top: 8vw;
+
+    transition: 0.5s top;
+}
+
+#B-geothermal-big div.revealed {
+    top: 0;
+}
+
+.B-price {
+    font-size: 10vw;
+    font-weight: 800;
+
+    position: absolute;
+    top: 66vw;
+    left: 5vw;
+}
+
+.B-price div {
+    height: 11vw;
+    overflow: hidden;
+}
+
+.B-price div div {
+    display: inline-block;
+
+    position: relative;
+    top: 10vw;
+
+    transition: 0.5s top;
+}
+
+.B-price div div.revealed {
+    top: 0;
+}
+
+.B-price i {
+    font-size: 4vw;
+    font-weight: 200;
+
+    position: relative;
+    top: -18vw;
+}
+
+.B-basic-info,
+.B-price {
+    opacity: 0;
+}
+
+.B-tax {
+    position: absolute;
+    top: 82vw !important;
+}
+
+.B-basic-info {
+    font-size: 1.5vw;
+    position: absolute;
+    top: 68vw;
+    left: 50vw;
+    width: 42vw;
+}
