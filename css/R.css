@@ -21,13 +21,10 @@ body {
 
     overflow-x: hidden;
     overflow-y: hidden;
-    cursor: none;
 }
 
 a,
 a:hover {
-    cursor: none;
-
     color: #eee;
     text-decoration: none;
 }
