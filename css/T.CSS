@@ -1,0 +1,80 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 7vw;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(0.4vw);
+    border-bottom: solid 0.1vw rgba(255, 255, 255, 0.2);
+
+    z-index: 3;
+}
+
+nav div {
+    height: 100%;
+
+    font-size: 1.25vw;
+    padding-left: 3vw;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 5vw;
+}
+
+nav div a {
+    cursor: pointer;
+    transition: 0.25s color;
+}
+
+nav div a:hover {
+    color: var(--green);
+}
+
+nav div a span {
+    color: var(--green);
+}
+
+#logo {
+    font-weight: 900;
+    font-size: 2.5vw;
+}
+
+#logo-earth {
+    position: relative;
+    top: 0.15vw;
+
+    color: var(--green);
+}
+
+#back-ctn {
+    opacity: 0;
+}
+
+#back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 3vw;
+    height: 3vw;
+    background: #eee;
+    color: #030303;
+    transition: 0.25s color, 0.25s background;
+    cursor: pointer;
+
+    border-radius: 1vw;
+    padding: 0;
+}
+
+#back-ctn span {
+    position: relative;
+    left: -3.5vw;
+}
+
+#back:hover {
+    background: #111;
+    color: #ddd;
+}

@@ -23,6 +23,10 @@ setTimeout(() => {
     });
 }, 6400);
 
+$("a").click(function () {
+    blur();
+});
+
 function blur() {
     $("#blur").addClass("active");
     setTimeout(function () {
