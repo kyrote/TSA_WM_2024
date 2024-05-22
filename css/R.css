@@ -22,8 +22,6 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
     cursor: none;
-
-    scroll-behavior: smooth;
 }
 
 a,
