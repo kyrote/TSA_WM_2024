@@ -19,6 +19,8 @@ body {
 
     font-family: "Cabinet Grotesk";
 
+    /*cursor: none;*/
+
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -68,6 +70,10 @@ a:hover {
     backdrop-filter: blur(0.5vw);
 }
 
+a {
+    /*cursor: none;*/
+}
+
 #cursor {
     opacity: 0;
     width: 1vw;
@@ -81,7 +87,7 @@ a:hover {
     position: absolute;
     pointer-events: none;
 
-    transition: width 0.25s, height 0.25s, left 0.05s, top 0.05s;
+    /*transition: width 0.25s, height 0.25s, left 0.05s, top 0.05s;*/
     z-index: 4;
 }
 

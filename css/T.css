@@ -44,9 +44,16 @@ nav div a span {
 
 #logo-earth {
     position: relative;
-    top: 0.15vw;
+    bottom: 0.5vw;
+
+    width: 12vw;
+    height: 4vw;
 
     color: var(--green);
+    background: url("../src/img/logo.png");
+    background-size: cover;
+
+    padding: 0;
 }
 
 #back-ctn {

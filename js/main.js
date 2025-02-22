@@ -1,6 +1,6 @@
 let plx_active = true;
 
-window.addEventListener("resize", (event) => {
+/*window.addEventListener("resize", (event) => {
     if ($(window).width() / $(window).height() < 1.2) {
         $("#rotate").show();
     } else {
@@ -15,13 +15,13 @@ $(function () {
     } else {
         $("#rotate").hide();
     }
-});
+});*/
 
 setTimeout(() => {
     $("html, body").css({
         "overflow-y": "auto",
     });
-}, 6400);
+}, 0);/*6400*/
 
 $("a").click(function () {
     blur();
@@ -112,11 +112,11 @@ function plx_el_two() {
     ) {
         b_solar_panel_seen = true;
 
-        $("#B-solar-panel-price div").html(spanned("$31,558"));
+        $("#B-solar-panel-price div").html(spanned("4.99%"));
 
         carousel(
-            "$31,558".length,
-            "$31,558".length + 1,
+            "4.99%".length,
+            "4.99%".length + 1,
             "#B-solar-panel-price div div"
         );
     }
@@ -124,11 +124,11 @@ function plx_el_two() {
     if (isScrolledIntoView($("#B-wind-price div")) && !b_wind_seen) {
         b_wind_seen = true;
 
-        $("#B-wind-price div").html(spanned("$50,000"));
+        $("#B-wind-price div").html(spanned("1.50B"));
 
         carousel(
-            "$50,000".length,
-            "$50,000".length + 1,
+            "1.50B".length,
+            "1.50B".length + 1,
             "#B-wind-price div div"
         );
     }
@@ -139,11 +139,11 @@ function plx_el_two() {
     ) {
         b_geothermal_seen = true;
 
-        $("#B-geothermal-price div").html(spanned("$24,500"));
+        $("#B-geothermal-price div").html(spanned("15.00%"));
 
         carousel(
-            "$24,500".length,
-            "$24,500".length + 1,
+            "15.00%".length,
+            "15.00%".length + 1,
             "#B-geothermal-price div div"
         );
     }
@@ -239,11 +239,11 @@ function i() {
         $("#B-solar-panel").css("transition", "0.25s opacity");
     }, 1900);
 
-    $("#B-solar-panel-big").html(spanned("SOLAR PANELS"));
+    $("#B-solar-panel-big").html(spanned("FARM-TO-TABLE"));
 
     carousel(
-        "SOLAR PANELS".length,
-        "SOLAR PANELS".length + 1,
+        "FARM-TO-TABLE".length,
+        "FARM-TO-TABLE".length + 1,
         "#B-solar-panel-big div"
     );
 
@@ -295,9 +295,9 @@ function ii() {
         $("#B-wind").css("transition", "0.25s opacity");
     }, 1900);
 
-    $("#B-wind-big").html(spanned("WIND ENERGY"));
+    $("#B-wind-big").html(spanned("PREPARATION PROCESSES"));
 
-    carousel("WIND ENERGY".length, "WIND ENERGY".length + 1, "#B-wind-big div");
+    carousel("PREPARATION PROCESSES".length, "PREPARATION PROCESSES".length + 1, "#B-wind-big div");
 
     setTimeout(function () {
         $(".B-big-name > #sub").css("opacity", 1);
@@ -341,11 +341,11 @@ function iii() {
         $("#B-geothermal").css("transition", "0.25s opacity");
     }, 1900);
 
-    $("#B-geothermal-big").html(spanned("GEOTHERMAL"));
+    $("#B-geothermal-big").html(spanned("SUSTAINABILITY"));
 
     carousel(
-        "GEOTHERMAL".length,
-        "GEOTHERMAL".length + 1,
+        "SUSTAINABILITY".length,
+        "SUSTAINABILITY".length + 1,
         "#B-geothermal-big div"
     );
 
@@ -376,9 +376,23 @@ $(document).on("mousemove", function (evt) {
     var x = evt.pageX;
     var y = evt.pageY;
 
+    $("#cursor").css("display", "block");
+
     $("#cursor").css({
         left: x,
         top: y,
         opacity: 1,
     });
+});
+
+$(document).on("scroll", function() {
+    $("#cursor").css("display", "none");
+});
+
+$(".nav").on('click', function(e) {
+    e.preventDefault();
+    const self = this;
+    setTimeout(function() {
+        window.location.href = self.href;
+    }, 200)
 });

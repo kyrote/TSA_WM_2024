@@ -139,8 +139,15 @@
     top: 0;
 }
 
+#B-wind-info > .button {
+    width: 15vw;
+}
+
 #B-wind-big {
     height: 9.5vw;
+    position: relative;
+    top: 2vw;
+    font-size: 7vw;
 
     display: inline-block;
     overflow: hidden;

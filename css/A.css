@@ -18,7 +18,7 @@
 .A-carousel {
     position: absolute;
     top: 5vw;
-    animation: A-carousel 2.2s forwards cubic-bezier(0.86, 0, 0.07, 1) 0.5s;
+    animation: A-carousel 2.2s forwards cubic-bezier(0.86, 0, 0.07, 1) -2.5s;/*0.5s*/
 }
 
 #A-carousel > #i {
@@ -27,11 +27,11 @@
 }
 
 #A-carousel > #ii {
-    animation-delay: 1.6s;
+    animation-delay: -1.6s;
 }
 
 #A-carousel > #iii {
-    animation-delay: 2.7s;
+    animation-delay: -2.7s;
 }
 
 @keyframes A-carousel {
@@ -103,15 +103,15 @@
     position: relative;
     top: 9.5vw;
 
-    animation: A-text 1.5s forwards cubic-bezier(0.86, 0, 0.07, 1) 5.4s;
+    animation: A-text 1.5s forwards cubic-bezier(0.86, 0, 0.07, 1) -5.4s;
 }
 
 #ii.A-text div {
-    animation-delay: 5.5s;
+    animation-delay: -5.5s;
 }
 
 #iii.A-text div {
-    animation-delay: 5.6s;
+    animation-delay: -5.6s;
 }
 
 @keyframes A-text {
@@ -122,7 +122,7 @@
 
 #A-star {
     position: absolute;
-    left: 56vw;
+    left: 48vw;
     top: 16vw;
 
     color: var(--green);
@@ -136,7 +136,7 @@
 
     font-size: 0;
 
-    animation: A-star 3s forwards cubic-bezier(0.86, 0, 0.07, 1) 5.5s;
+    animation: A-star 3s forwards cubic-bezier(0.86, 0, 0.07, 1) -5.5s;
 }
 
 @keyframes A-star {
@@ -223,7 +223,7 @@
 
     z-index: 5;
 
-    animation: A-video 4s forwards cubic-bezier(0.86, 0, 0.07, 1) 4.4s;
+    animation: A-video 4s forwards cubic-bezier(0.86, 0, 0.07, 1) -4.4s;
 }
 
 @keyframes A-video {

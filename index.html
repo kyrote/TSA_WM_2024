@@ -20,26 +20,25 @@
             referrerpolicy="no-referrer"
         />
         <script src="./js/jquery-3.7.1.min.js"></script>
-        <title>Earthscape</title>
+        <title>Midori</title>
     </head>
     <body>
-        <div id="rotate">
+        <!--<div id="rotate">
             Please rotate your device for a better experience.<br />
-        </div>
+        </div>-->
         <div id="blur"></div>
         <div id="cursor"></div>
         <!-- ! SECTION T (TITLE) -->
         <nav>
             <div>
-                <a id="logo">
-                    <i id="logo-earth" class="fa-solid fa-earth-americas"></i
-                    >&ensp;EARTH<span>SCAPE</span>
+                <a class="nav" id="logo">
+                    <div id="logo-earth"></div>
                 </a>
-                <a href="#A">About</a>
-                <a href="#solutions">Solutions</a>
-                <a href="#C-title">FAQs</a>
-                <a href="#D-title">Sources</a>
-                <a href="#E">Contact</a>
+                <a class="nav" href="#A">About</a>
+                <a class="nav" href="#solutions">Solutions</a>
+                <a class="nav" href="#C-title">FAQs</a>
+                <a class="nav" href="#D-title">Sources</a>
+                <a class="nav" href="#E">Contact</a>
             </div>
             <div id="back-ctn">
                 <div id="back" onclick="back()">
@@ -60,14 +59,14 @@
                     <div><b>Change</b> the world, one step at a time.</div>
                 </div>
                 <div id="A-text">
-                    <div class="A-text" id="i"><div>Changing the</div></div>
+                    <div class="A-text" id="i"><div>Vegetarian</div></div>
                     <div class="A-text" id="ii">
                         <div>
-                            future with new,
-                            <b style="color: var(--green)">green</b>
+                            inspired cuisine,
+                            <b style="color: var(--green)">eat</b>
                         </div>
                     </div>
-                    <div class="A-text" id="iii"><div>innovations</div></div>
+                    <div class="A-text" id="iii"><div>it your way.</div></div>
                 </div>
                 <div id="A-star">
                     <div>✦</div>
@@ -85,17 +84,17 @@
                 </div>
                 <div>
                     <div id="iv">
-                        collaboration,
+                        cuisine,
                         <b style="color: var(--green)">green</b> innovation, and
                     </div>
                 </div>
-                <div><div id="v">eco-conscious design."</div></div>
+                <div><div id="v">eco-conscious menus."</div></div>
                 <div id="line"></div>
             </div>
             <div id="A-video-ctn">
                 <video
                     id="A-video"
-                    src="./src/img/turbines.mp4"
+                    src="./src/img/cooking.mp4"
                     loop
                     autoplay
                     muted
@@ -104,7 +103,7 @@
                     As pioneers in sustainable household solutions, we leverage
                     cutting-edge
                     <b style="color: var(--green)">green</b> technologies to
-                    create living spaces that are both eco-friendly and
+                    create cuisines that are both eco-friendly and
                     inspiring.
                     <div class="button">
                         <a href="#solutions" onclick="blur()"
@@ -119,24 +118,24 @@
             <img
                 class="B-info"
                 id="B-solar-panel"
-                src="./src/img/solar_panels.jpg"
+                src="./src/img/farm.jpg"
                 onclick="i()"
             />
             <div id="B-solar-panel-info">
                 <div class="number" id="solutions">/ 01</div>
-                <b class="name">Solar panels</b>
+                <b class="name">Farm-to-table</b>
                 <div class="line"></div>
                 <div class="desc">
-                    We offer solar panel solutions, including design,
-                    installation, and maintenance, for optimal energy efficiency
-                    in residential and commercial projects.
+                    We offer farm-to-table solutions, including eco-friendly,
+                    eco-concious, and carefully prepared foods for optimal energy efficiency
+                    in residential and commercial cuisine.
                 </div>
-                <div class="button" onclick="i()">Solar panels</div>
+                <div class="button" onclick="i()">Farm-to-table</div>
             </div>
             <div class="B-big-name">
                 <div id="B-solar-panel-big"></div>
                 <br />
-                <i id="sub">Household Green Energy Solution</i><br />
+                <i id="sub">Vegetarian Solution</i><br />
                 <div id="scroll">
                     <i class="fa-solid fa-arrow-down"></i>&ensp;SCROLL
                     DOWN&ensp;
@@ -145,46 +144,40 @@
             </div>
             <div id="B-solar-panel-price" class="B-price">
                 <div></div>
-                <br /><i>Average Price</i>
+                <br /><i>Increase (Socially)</i>
             </div>
             <div id="B-solar-panel-tax" class="B-price B-tax">
-                <div>30%</div>
-                <br /><i>Tax Rebate</i>
+                <div>0.03%</div>
+                <br /><i>Incorporation (Worldwide)</i>
             </div>
             <div class="B-basic-info">
-                Solar panels, the core components of solar power systems,
-                operate by converting sunlight into electricity through the
-                photovoltaic effect. Composed of silicon-based solar cells, they
-                generate an electric current when sunlight dislodges electrons.
-                With efficiency ratings typically between 15% and 23%, solar
-                panels remain functional for at least 25 years, even as their
-                power output gradually decreases. These panels provide backup
-                power during blackouts and continue to produce energy even on
-                cloudy days.
+                We source our ingredients from local organic farms that use sustainable practices. w
+                We maintain partnerships with community-supported agriculture (CSA) programs ensure seasonal and fresh produce.
+                Our restaurant avoids pesticides and GMOs, prioritizing heirloom and indigenous crops.
             </div>
         </div>
         <div id="B-ii">
             <img
                 class="B-info"
                 id="B-wind"
-                src="./src/img/wind.jpg"
+                src="./src/img/prep.jpg"
                 onclick="ii()"
             />
             <div id="B-wind-info">
                 <div class="number">/ 02</div>
-                <b class="name">Wind energy</b>
+                <b class="name">Preparation Processes</b>
                 <div class="line"></div>
                 <div class="desc">
-                    Explore our wind energy solutions, from design and
-                    installation to maintenance, ensuring top energy efficiency
-                    for homes and businesses.
+                    Explore our preparation solutions, from design and
+                    incorporation to cuisine, ensuring top energy efficiency
+                    for our businesses.
                 </div>
-                <div class="button" onclick="ii()">Wind energy</div>
+                <div class="button" onclick="ii()">Preparation Processes</div>
             </div>
             <div class="B-big-name">
                 <div id="B-wind-big"></div>
                 <br />
-                <i id="sub">Household Green Energy Solution</i><br />
+                <i id="sub">Vegetarian Solution</i><br />
                 <div id="scroll">
                     <i class="fa-solid fa-arrow-down"></i>&ensp;SCROLL
                     DOWN&ensp;
@@ -193,53 +186,40 @@
             </div>
             <div id="B-wind-price" class="B-price">
                 <div></div>
-                <br /><i>Average Price</i>
+                <br /><i>Vegetarians (Worldwide)</i>
             </div>
             <div id="B-wind-tax" class="B-price B-tax">
-                <div>30%</div>
-                <br /><i>Tax Rebate</i>
+                <div>~18%</div>
+                <br /><i>Of The World</i>
             </div>
             <div class="B-basic-info">
-                Harnessing wind energy at home is an excellent way to reduce
-                your carbon footprint and contribute to a greener environment.
-                Consider installing a small wind turbine on your property,
-                especially in areas with consistent breezes. These compact
-                devices generate electricity from wind and can significantly
-                offset your energy consumption. For a more consistent energy
-                supply, combine wind power with solar panels in a hybrid system.
-                During windy days, the wind turbine generates electricity, and
-                on calmer days, the solar panels take over. If your local
-                utility offers net metering, feed excess electricity back into
-                the grid and receive credits on your bill. Pair your wind
-                turbine with energy storage solutions, such as batteries, to
-                store surplus energy for non-windy periods or at night. Lastly,
-                share your experience with friends and neighbors to encourage
-                sustainable practices. Every small step toward green energy
-                counts!
+                Our restaurant makes sure vegetables and grains are washed, prepped, and minimally processed to retain nutrients.
+                We use zero-waste cooking techniques: vegetable scraps are repurposed into broths or composted.
+                We use innovative plant-based cooking: Fermentation, slow roasting, and sous-vide methods enhance natural flavors.
             </div>
         </div>
         <div id="B-iii">
             <img
                 class="B-info"
                 id="B-geothermal"
-                src="./src/img/geothermal.jpg"
+                src="./src/img/sus.jpg"
                 onclick="iii()"
             />
             <div id="B-geothermal-info">
                 <div class="number">/ 03</div>
-                <b class="name">Geothermal</b>
+                <b class="name">Sustainability</b>
                 <div class="line"></div>
                 <div class="desc">
-                    Discover our geothermal solutions, covering design,
-                    installation, and maintenance, for superior energy
-                    efficiency in both residential and commercial settings.
+                    Discover our sustainable solutions, covering design,
+                    incorporation, and maintenance, for superior energy
+                    efficiency in both residential and commercial cuisine.
                 </div>
-                <div class="button" onclick="iii()">Geothermal</div>
+                <div class="button" onclick="iii()">Sustainability</div>
             </div>
             <div class="B-big-name">
                 <div id="B-geothermal-big"></div>
                 <br />
-                <i id="sub">Household Green Energy Solution</i><br />
+                <i id="sub">Vegetarian Solution</i><br />
                 <div id="scroll">
                     <i class="fa-solid fa-arrow-down"></i>&ensp;SCROLL
                     DOWN&ensp;
@@ -248,33 +228,16 @@
             </div>
             <div id="B-geothermal-price" class="B-price">
                 <div></div>
-                <br /><i>Average Price</i>
+                <br /><i>Reduced Emissions</i>
             </div>
             <div id="B-geothermal-tax" class="B-price B-tax">
-                <div>30%</div>
-                <br /><i>Tax Rebate</i>
+                <div>Better</div>
+                <br /><i>For The Environment</i>
             </div>
             <div class="B-basic-info">
-                Geothermal energy offers a renewable and sustainable solution
-                for residential heating and cooling. Here’s how it works:
-                Starting at depths of 6 to 10 meters, the earth maintains a
-                relatively constant temperature of around 8 to 10°C. Geothermal
-                systems use heat pumps to extract this energy and transfer it
-                into buildings. By doing so, they save homeowners approximately
-                50% to 60% on heating and cooling costs compared to traditional
-                fuel sources. During summer, geothermal cooling functions like
-                standard air conditioning, but instead of ejecting heat into the
-                outside air, it deposits it deep in the ground for future use.
-                This guilt-free air conditioning actually warms the earth below,
-                enhancing the efficiency of the ground source heat pump during
-                winter. There are two main types of geothermal systems: vertical
-                closed-loop systems (which require depths of 300 feet or more)
-                and horizontal closed-loop systems (where pipes run back and
-                forth underground). While vertical systems are more efficient,
-                horizontal systems can be cheaper to install, though they
-                require significant space and impact ecosystems. Overall,
-                geothermal energy provides a clean, reliable, and cost-effective
-                solution for greener homes.
+                Our kitchen operates on low energy consumption, using electric appliances and biodegradable packaging.
+                We use water conservation techniques, such as using steam-based cooking.
+                Our restaurant follows a carbon-neutral philosophy, offsetting emissions by sourcing locally.
             </div>
         </div>
         <!-- ! SECTION C (FAQs) -->
@@ -282,38 +245,31 @@
             <div id="C-title">FAQs</div>
             <div id="C-questions">
                 <div class="question">
-                    How does green energy benefit the environment?
+                    Are plant-based dishes really flavorful?
                     <i class="arrow fa-solid fa-arrow-down"></i>
                     <div class="answer">
-                        Green energy reduces greenhouse gas emissions, improving
-                        air quality and mitigating climate change.
+                        Absolutely! Our chefs use innovative cooking techniques, fresh herbs, and spices to create bold and exciting flavors without needing meat.
                     </div>
                 </div>
                 <div class="question">
-                    Is green energy expensive?
+                    Is a vegetarian diet actually healthier?
                     <i class="arrow fa-solid fa-arrow-down"></i>
                     <div class="answer">
-                        While there may be initial costs, long-term savings on
-                        utility bills and government incentives make it
-                        cost-effective.
+                        A well-balanced vegetarian diet can be rich in nutrients and lower in saturated fat, reducing the risk of heart disease, diabetes, and high blood pressure.
                     </div>
                 </div>
                 <div class="question">
-                    Can green energy meet my energy needs?
+                    What makes your farm-to-table approach special?
                     <i class="arrow fa-solid fa-arrow-down"></i>
                     <div class="answer">
-                        Yes, advancements in technology have made renewable
-                        energy sources reliable and capable of meeting various
-                        energy demands.
+                        We work directly with local farmers to ensure our ingredients are organic and fresh, making each dish taste better and more nutritious.
                     </div>
                 </div>
                 <div class="last question">
-                    How does green energy contribute to energy independence?
+                    How does the restaurant minimize food waste?
                     <i class="arrow fa-solid fa-arrow-down"></i>
                     <div class="answer">
-                        Green energy utilizes local, abundant resources,
-                        reducing reliance on imported energy and enhancing
-                        resilience against disruptions.
+                        We practice zero-waste cooking by repurposing vegetable scraps for broth, and partnering with local organizations to donate surplus food.
                     </div>
                 </div>
             </div>
@@ -334,11 +290,11 @@
                     <div class="line"></div>
                     <div class="desc">
                         <a
-                            href="https://www.pexels.com/video/aerial-footage-of-wind-turbines-4842993/"
+                            href="https://www.pexels.com/video/a-person-slicing-mushrooms-3196463/"
                             target="_blank"
                             >Video</a
                         >
-                        by Alejandro A. Fontanil from Pexels<br />
+                        by Pressmaster from Pexels<br />
                         <a
                             href="https://www.pexels.com/photo/solar-panels-on-snow-with-windmill-under-clear-day-sky-433308/"
                             target="_blank"
@@ -346,17 +302,11 @@
                         >
                         by Pixabay<br />
                         <a
-                            href="https://www.pexels.com/photo/white-and-red-houses-on-brown-grass-field-under-gray-sky-3704600/"
+                            href="https://www.pexels.com/photo/photo-of-green-field-near-mountains-974314/"
                             target="_blank"
                             >Photo</a
                         >
-                        by Matthis Volquardsen<br />
-                        <a
-                            href="https://www.pexels.com/photo/body-of-water-and-smoke-534371/"
-                            target="_blank"
-                            >Photo</a
-                        >
-                        by Kerry<br />
+                        by Tim Mossholder
                     </div>
                     <div
                         class="button"
@@ -369,26 +319,25 @@
                     <img
                         class="D-info"
                         id="D-bankrate"
-                        src="./src/img/bankrate.svg"
+                        src="./src/img/tastewise.png"
                         onclick="iii()"
                     />
                     <div id="D-bankrate-info">
                         <div class="number">/ 02</div>
-                        <b class="name">Bankrate</b>
+                        <b class="name">Tastewise.io</b>
                         <div id="push">
                             <div class="line"></div>
                             <div class="desc">
-                                Bankrate offered us an insight into the average
-                                cost, price range, and cost factors of solar
-                                panels. It also allowed us to see the incentives
-                                and savings as well as the financial
-                                considerations when it came to solar panels.
+                                Tastewise.io offered us an insight into the average
+                                trends and analytics of vegetarian cuisine. It also 
+                                allowed us to see the social and worldwide incoporation 
+                                percentages when it came to vegetarian cuisine.
                             </div>
                             <div
                                 class="button"
-                                onclick="window.location.href='https://www.bankrate.com/homeownership/solar/solar-panel-cost/#:~:text=The%20average%20solar%20panel%20cost%20in%20the%20U.S.,on%20where%20you%20live%20and%20before%20applying%20incentives.'"
+                                onclick="window.location.href='https://tastewise.io/foodtrends/farm-to-table'"
                             >
-                                Bankrate
+                                Tastewise.io
                             </div>
                         </div>
                     </div>
@@ -397,24 +346,24 @@
                     <img
                         class="D-info"
                         id="D-understandsolar"
-                        src="./src/img/understandsolar.svg"
+                        src="./src/img/waf.png"
                         onclick="iii()"
                     />
                     <div id="D-understandsolar-info">
                         <div class="number">/ 03</div>
-                        <b class="name">Understand Solar</b>
+                        <b class="name">WAF</b>
                         <div class="line"></div>
                         <div class="desc">
-                            Despite its name, this website still gave us very
-                            useful information about wind energy. It gave us the
-                            cost of residential wind turbinds and the factors
-                            that would affect cost-effectiveness.
+                            WAF (World Animal Foundation) allowed us to have an insight
+                            into how popular (or unpopular) vegetarian
+                            diets were around the world and get a gauge
+                            how how much they have been incorporated.
                         </div>
                         <div
                             class="button"
-                            onclick="window.location.href='https://understandsolar.com/how-much-does-wind-energy-cost/'"
+                            onclick="window.location.href='https://worldanimalfoundation.org/advocate/vegetarian-statistics/'"
                         >
-                            Understand Solar
+                            WAF
                         </div>
                     </div>
                 </div>
@@ -422,24 +371,24 @@
                     <img
                         class="D-info"
                         id="D-forbes"
-                        src="./src/img/forbes.jpg"
+                        src="./src/img/bbc.png"
                         onclick="iii()"
                     />
                     <div id="D-forbes-info">
                         <div class="number">/ 04</div>
-                        <b class="name">Forbes</b>
+                        <b class="name">BBC</b>
                         <div id="push">
                             <div class="line"></div>
                             <div class="desc">
-                                Forbes gave us an insight into the average cost,
-                                cost range, system overview, installation costs,
-                                and equipment costs for geothermal systems.
+                                BBC gave us an insight into the incentives,
+                                effects, system overview, benefits,
+                                and eco-conscious nature of vegetarian diets.
                             </div>
                             <div
                                 class="button button-f"
-                                onclick="window.location.href='https://www.forbes.com/home-improvement/hvac/geothermal-heating-cooling-systems-cost/'"
+                                onclick="window.location.href='https://www.bbc.com/future/article/20220429-the-climate-benefits-of-veganism-and-vegetarianism'"
                             >
-                                Forbes
+                                BBC
                             </div>
                         </div>
                     </div>
@@ -454,7 +403,7 @@
                     >
                 </div>
                 <div id="names">LOCASCIO&PHU</div>
-                <div id="phone">479-228-7259</div>
+                <div id="phone">479-XXX-XXXX</div>
             </div>
         </div>
         <script src="./js/main.js"></script>
