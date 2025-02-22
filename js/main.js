@@ -1,27 +1,29 @@
 let plx_active = true;
 
-/*window.addEventListener("resize", (event) => {
-    if ($(window).width() / $(window).height() < 1.2) {
-        $("#rotate").show();
+window.addEventListener("resize", (event) => {
+    if ($(window).width() / $(window).height() <= 1) {
+        plx_const = true;
     } else {
-        $("#rotate").hide();
+        plx_const = false;
     }
+    plx_active ? plx_el() : plx_el_two();
 });
 
 $(function () {
     document.body.scrollTop = document.documentElement.scrollTop = 0;
-    if ($(window).width() / $(window).height() < 1.2) {
-        $("#rotate").show();
+    if ($(window).width() / $(window).height() <= 1) {
+        plx_const = true;
     } else {
-        $("#rotate").hide();
+        plx_const = false;
     }
-});*/
+    plx_active ? plx_el() : plx_el_two();
+});
 
 setTimeout(() => {
     $("html, body").css({
         "overflow-y": "auto",
     });
-}, 0);/*6400*/
+}, 6400);/*6400*/
 
 $("a").click(function () {
     blur();
@@ -44,9 +46,11 @@ function isScrolledIntoView(elem) {
     return elemBottom <= docViewBottom && elemTop >= docViewTop;
 }
 
+let plx_const = false;
+
 function plx(top, factor) {
     return (
-        top +
+        top + plx_const +
         ((factor * $(window).scrollTop()) / $(window).height()) *
             ($(window).height() / $(window).width() / 0.5625) +
         "vw"
@@ -58,38 +62,77 @@ function plx_el() {
         $("#A-quote-ctn div div").addClass("A-quote-final");
     }
 
-    // SECTION A (ABOUT)
+    if(!plx_const) {
 
-    $("#A-texts").css("top", plx(0, 10));
-    $("#A-quote-ctn").css("top", plx(65, 5));
-    $("#A-video-ctn").css("top", plx(37, 0));
+        // SECTION A (ABOUT)
 
-    // SECTION B (SOLUTIONS)
+        $("#A-texts").css("top", plx(0, 10));
+        $("#A-quote-ctn").css("top", plx(65, 5));
+        $("#A-video-ctn").css("top", plx(37, 0));
 
-    $("#B-solar-panel").css("top", plx(90, 10));
-    $("#B-solar-panel-info").css("top", plx(120, 0));
+        // SECTION B (SOLUTIONS)
 
-    $("#B-wind").css("top", plx(110, 10));
-    $("#B-wind-info").css("top", plx(145, 0));
+        $("#B-solar-panel").css("top", plx(100, 10));
+        $("#B-solar-panel-info").css("top", plx(120, 0));
 
-    $("#B-geothermal").css("top", plx(142, 10));
-    $("#B-geothermal-info").css("top", plx(176, 0));
+        $("#B-wind").css("top", plx(110, 10));
+        $("#B-wind-info").css("top", plx(145, 0));
 
-    // SECTION C (FAQs)
+        $("#B-geothermal").css("top", plx(142, 10));
+        $("#B-geothermal-info").css("top", plx(176, 0));
 
-    $("#C-title").css("top", plx(202, 0));
-    $("#C-questions").css("top", plx(216, 0));
+        // SECTION C (FAQs)
 
-    // SECTION D (Sources)
+        $("#C-title").css("top", plx(202, 0));
+        $("#C-questions").css("top", plx(216, 0));
 
-    $("#D-pexels").css("top", plx(-40, 10));
-    $("#D-pexels-info").css("top", plx(6, 0));
+        // SECTION D (Sources)
 
-    $("#D-bankrate").css("top", plx(-45, 10));
-    $("#D-bankrate-info").css("top", plx(6, 0));
+        $("#D-pexels").css("top", plx(-40, 10));
+        $("#D-pexels-info").css("top", plx(6, 0));
 
-    $("#D-understandsolar").css("top", plx(-50, 10));
-    $("#D-understandsolar-info").css("top", plx(6, 0));
+        $("#D-bankrate").css("top", plx(-45, 10));
+        $("#D-bankrate-info").css("top", plx(6, 0));
+
+        $("#D-understandsolar").css("top", plx(-50, 10));
+        $("#D-understandsolar-info").css("top", plx(6, 0));
+
+    } else {
+
+        // SECTION A (ABOUT)
+
+        $("#A-texts").css("top", plx(0, 10));
+        $("#A-quote-ctn").css("top", plx(65, 5));
+        $("#A-video-ctn").css("top", plx(37, 0));
+
+        // SECTION B (SOLUTIONS)
+
+        $("#B-solar-panel").css("top", plx(145, 8));
+        $("#B-solar-panel-info").css("top", plx(155, 0));
+
+        $("#B-wind").css("top", plx(173, 10));
+        $("#B-wind-info").css("top", plx(200, 0));
+
+        $("#B-geothermal").css("top", plx(213, 10));
+        $("#B-geothermal-info").css("top", plx(241, 0));
+
+        // SECTION C (FAQs)
+
+        $("#C-title").css("top", plx(292, 0));
+        $("#C-questions").css("top", plx(306, 0));
+
+        // SECTION D (Sources)
+
+        $("#D-pexels").css("top", plx(55, 10));
+        $("#D-pexels-info").css("top", plx(106, 0));
+
+        $("#D-bankrate").css("top", plx(60, 10));
+        $("#D-bankrate-info").css("top", plx(106, 0));
+
+        $("#D-understandsolar").css("top", plx(65, 10));
+        $("#D-understandsolar-info").css("top", plx(116, 0));
+
+    }
 }
 
 $(window).on("scroll", function (e) {
@@ -389,7 +432,7 @@ $(document).on("scroll", function() {
     $("#cursor").css("display", "none");
 });
 
-$(".nav").on('click', function(e) {
+$(".nav1, .nav2").on('click', function(e) {
     e.preventDefault();
     const self = this;
     setTimeout(function() {

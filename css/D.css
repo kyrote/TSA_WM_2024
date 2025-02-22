@@ -121,3 +121,33 @@
     right: 0;
     top: 9vw !important;
 }
+
+@media (max-aspect-ratio: 1/1) {
+    #D-pexels-info > .desc {
+        font-size: 1.2vw;
+        line-height: 1.75vw;
+    }
+
+    #D-understandsolar-info > .desc {
+        font-size: 1.2vw;
+        line-height: 1.75vw;
+    }
+
+    #D-bankrate-info > * > .desc {
+        font-size: 1.2vw;
+        line-height: 1.75vw;
+    }
+
+    #D-forbes-info > * > .desc {
+        font-size: 1.2vw;
+        line-height: 1.75vw;
+    }
+    
+    #D-title {
+        top: 340vw;
+    }
+
+    #D-iv {
+        top: 190vw;
+    }
+}

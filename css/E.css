@@ -48,6 +48,52 @@
     color: red;
 }
 
+#checklist a {
+    text-decoration: underline 0.2vw;
+    text-underline-offset: 0.4vw;
+
+    transition: 0.25s color;
+    color: #030303;
+}
+
+#checklist a:hover {
+    color: red;
+}
+
+#log a {
+    text-decoration: underline 0.2vw;
+    text-underline-offset: 0.4vw;
+
+    transition: 0.25s color;
+    color: #030303;
+}
+
+#log a:hover {
+    color: red;
+}
+
+#checklist {
+    position: absolute;
+    top: 2vw;
+    left: 25vw;
+
+    width: 15vw;
+
+    font-weight: 500;
+    font-size: 1.25vw;
+}
+
+#log {
+    position: absolute;
+    top: 2vw;
+    left: 42vw;
+
+    width: 10vw;
+
+    font-weight: 500;
+    font-size: 1.25vw;
+}
+
 #phone {
     position: relative;
     top: -1.75vw;
@@ -55,4 +101,10 @@
     font-weight: 800;
     font-size: 4vw;
     width: 33vw;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    #E {
+        top: 480vw;
+    }
 }

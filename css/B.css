@@ -238,3 +238,23 @@
     left: 50vw;
     width: 42vw;
 }
+
+@media (max-aspect-ratio: 1/1) {
+    .B-info {
+        width: 20vw;
+        height: 25vw;
+    }
+
+    .desc {
+        font-size: 2vw;
+        line-height: 3vw;
+    }
+
+    #B-i > * > b, #B-ii > * > b, #B-iii > * > b  {
+        font-size: 4vw !important;
+    }
+
+    .B-big-name, .B-price, .B-tax, .B-basic-info {
+        padding-top: 10vw;
+    }
+}

@@ -85,3 +85,22 @@ nav div a span {
     background: #111;
     color: #ddd;
 }
+
+@media (max-aspect-ratio: 1/1) {
+    nav {
+        height: 20vw;
+    }
+
+    #logo-earth {
+        position: absolute;
+        top: 4vw;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30vw;
+        height: 10vw;
+    }
+
+    .nav2 {
+        display: none;
+    }
+}
